@@ -1,0 +1,32 @@
+/*#test-list
+{
+	padding: 0;
+	border: 1px solid #000;
+	margin-top: 50px;
+
+	list-style-type: none;
+
+	border-radius: 4px;
+}
+
+	#test-list > li
+	{
+		display: block;
+	}
+
+	#test-list li + li
+	{
+		border-top: 1px solid #000;
+	}
+
+	#test-list a
+	{
+		display: block;
+
+		padding: 10px;
+	}
+
+	#test-list strong
+	{
+
+	}*/
