@@ -29,7 +29,18 @@
 	#test-list strong
 	{
 
-	}*/
+		}*/
+
+body
+{
+	height: auto !important;
+	position: static !important; 
+}
+.content
+{
+	height: 100% !important;
+	position: static !important;
+}
 
 @media (min-width: 456px)
 {
