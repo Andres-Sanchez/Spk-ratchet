@@ -2,13 +2,91 @@
 body
 {
 	height: auto !important;
-	position: static !important; 
+	position: static !important;
 }
+
 .content
 {
+	padding-top: 80px !important;
 	height: 100% !important;
 	position: static !important;
 }
+
+.bar
+{
+	height: initial;
+	border: 0 none;
+	background-color: #D2D829;
+}
+
+#top-bar
+{
+	position: relative;
+}
+
+#main-search-form input
+{
+	padding-left: 70px;
+	border: 0 none;
+	margin-top: 20px;
+
+	box-shadow: none;
+
+	color: #fff;
+
+	background-color: #D2D829;
+}
+
+#main-search-form button
+{
+	position: absolute;
+	border: 0 none;
+
+	left: 10px;
+	top: 4px;
+
+	background-color: #D2D829;
+}
+
+#main-search-form button i
+{
+	color: #fff;
+}
+
+#main-search-form::-webkit-input-placeholder
+{ /* WebKit browsers */
+    color: #fff;
+}
+#main-search-form:-moz-placeholder
+{ /* Mozilla Firefox 4 to 18 */
+   color: #fff;
+   opacity:  1;
+}
+#main-search-form::-moz-placeholder
+{ /* Mozilla Firefox 19+ */
+   color: #fff;
+   opacity:  1;
+}
+#main-search-form:-ms-input-placeholder
+{ /* Internet Explorer 10+ */
+   color: #fff;
+}
+
+#main-options
+{
+	position: absolute;
+
+	right: 10px;
+	top: 4px;
+}
+
+#main-options i
+{
+	color: #fff;
+}
+
+
+/* Test styles*/
 
 /*#test-list
 {

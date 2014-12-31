@@ -34,7 +34,21 @@
 
 	<!-- Make sure all your bars are the first things in your <body> -->
 	<header class="bar bar-nav">
-		<h1 class="title">Ratchet</h1>
+
+		<section id="top-bar">
+			<form id="main-search-form" name="main-search-form" action="#" role="form">
+				<div class="form-group">
+	                <label class="sr-only" for="main-search">Buscar promociones</label>
+	    			<input type="text" class="form-control" id="main-search" placeholder="Buscar promociones...">
+	    			<button type="submit"><i class="myicon-search"></i></button>
+	            </div>
+			</form>
+
+			<div id="main-options">
+				<a href="#settingsModal"><i class="myicon-ellipsis-vert"></i></a>
+			</div>
+		</section>
+		
 	</header>
 
 	<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
@@ -63,6 +77,48 @@
 					<a class="push-right" href="promos.html">Valencia</a>
 				</li>
 			</ul>
+		</div>
+	</div>
+
+	<!-- Settings Modal -->
+	<div id="settingsModal" class="modal">
+		<header class="bar bar-nav">
+			<a class="icon icon-close pull-right" href="#settingsModal"></a>
+			<h1 class="title">Settings Example</h1>
+		</header>
+
+		<div class="content">
+			<form class="input-group">
+				<input type="text" placeholder="Full name">
+				<input type="email" placeholder="Email">
+				<input type="text" placeholder="Username">
+			</form>
+
+			<h5 class="content-padded">App settings</h5>
+
+			<ul class="table-view">
+				<li class="table-view-cell media">
+					<span class="media-object pull-left icon icon-sound"></span>
+					<div class="media-body">
+						Enable sounds
+					</div>
+					<div class="toggle">
+						<div class="toggle-handle"></div>
+					</div>
+				</li>
+				<li class="table-view-cell media">
+					<span class="media-object pull-left icon icon-person"></span>
+					<div class="media-body">
+						Parental controls
+					</div>
+					<div class="toggle">
+						<div class="toggle-handle"></div>
+					</div>
+				</li>
+			</ul>
+			<div class="content-padded">
+				<button class="btn btn-positive btn-block">Save settings</button>
+			</div>
 		</div>
 	</div>
 
