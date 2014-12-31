@@ -406,6 +406,14 @@
 
     xhr.send();
 
+    if (isFileProtocol) {
+      if (xhr.status === 0 || xhr.status === 200) {
+        success(xhr, options);
+      } else {
+        failure(options.url);
+      }
+    }
+
     if (xhr.readyState && !options.ignorePush) {
       cachePush();
     }
