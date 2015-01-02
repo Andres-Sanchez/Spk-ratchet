@@ -16,6 +16,52 @@
 
 	<!-- Include the compiled Ratchet JS -->
 	<script src="js/ratchet.js"></script>
+
+	
+	<!-- Añadidos -->
+
+	<!-- Icon font -->
+	<link rel="stylesheet" href="css/icon_font/icon_font.css">
+	<!-- [if IE 7]><link rel="stylesheet" href="css/icon_font/icon_font-ie7.css"><![endif] -->
+
+	<!-- Bootstrap -->
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/main.css" rel="stylesheet">
+
+	<!-- Include custom JS -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/handlebars/handlebars.js"></script>
+	<script src="js/sectioncontroller.js"></script>
+	<script src="js/datamanager.js"></script>
+	<script src="js/view.js"></script>
+	<script src="js/viewtest.js"></script>
+
+	<script type="text/javascript">
+
+		window.addEventListener('push', function()
+		{
+			console.info("Evento push");
+
+			var catController = new SectionController();
+
+			catController.init('categories');
+		});
+	</script>
+
+	<script id="categoriesTemplate" type="text/x-handlebars-template">
+		<h3>Lista de categorías:</h3>
+
+	    <ul id="category-list">
+	        {{#each categories}}
+			    <li>
+			    	<h4>{{name}}</h4>
+			    	<h5>{{slug}}</h5>
+			    </li>
+			{{/each}}
+	    </ul>
+	</script>
 </head>
 <body>
 
