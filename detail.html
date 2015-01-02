@@ -21,7 +21,27 @@
 
 	<!-- Make sure all your bars are the first things in your <body> -->
 	<header class="bar bar-nav">
-		<h1 class="title">Ratchet</h1>
+
+		<!-- <a href="#popover">
+			<h1 class="title">
+				Tap title
+				<span class="icon icon-caret"></span>
+			</h1>
+		</a> -->
+		<section id="top-bar">
+			<form id="main-search-form" name="main-search-form" action="#" role="form">
+				<div class="form-group">
+	                <label class="sr-only" for="main-search">Buscar promociones</label>
+	    			<input type="text" class="form-control" id="main-search" placeholder="Buscar promociones...">
+	    			<button type="submit"><i class="myicon-search"></i></button>
+	            </div>
+			</form>
+
+			<div id="main-options">
+				<a href="#settingsModal"><i class="myicon-ellipsis-vert"></i></a>
+			</div>
+		</section>
+		
 	</header>
 
 	<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->

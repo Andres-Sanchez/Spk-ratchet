@@ -29,6 +29,39 @@
 
 	<!-- Custom CSS -->
 	<link href="css/main.css" rel="stylesheet">
+
+	<!-- Include custom JS -->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/handlebars/handlebars.js"></script>
+	<script src="js/sectioncontroller.js"></script>
+	<script src="js/datamanager.js"></script>
+	<script src="js/view.js"></script>
+	<script src="js/viewtest.js"></script>
+
+	<script type="text/javascript">
+
+		window.addEventListener('push', function()
+		{
+			console.info("Evento push");
+
+			var catController = new SectionController();
+
+			catController.init('categories');
+		});
+	</script>
+
+	<script id="categoriesTemplate" type="text/x-handlebars-template">
+		<h3>Lista de categorías:</h3>
+
+	    <ul id="category-list">
+	        {{#each categories}}
+			    <li>
+			    	<h4>{{name}}</h4>
+			    	<h5>{{slug}}</h5>
+			    </li>
+			{{/each}}
+	    </ul>
+	</script>
 </head>
 <body>
 
@@ -59,30 +92,35 @@
 
 	<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
 	<div class="content">
-		<div class="card">
-			<ul class="table-view">
-				<li class="table-view-cell">
-					<strong>Seleccionar ciudad</strong>
-				</li>
-				<li class="table-view-cell">
-					<a class="push-right" href="promos.html" data-transition="slide-in">Oviedo</a>
-				</li>
-				<li class="table-view-cell">
-					<a class="push-right" href="promos.html" data-transition="slide-in">Sevilla</a>
-				</li>
-				<li class="table-view-cell">
-					<a class="push-right" href="promos.html">Barcelona</a>
-				</li>
-				<li class="table-view-cell">
-					<a class="push-right" href="promos.html">Madrid</a>
-				</li>
-				<li class="table-view-cell">
-					<a class="push-right" href="promos.html">Ciudad real</a>
-				</li>
-				<li class="table-view-cell">
-					<a class="push-right" href="promos.html">Valencia</a>
-				</li>
-			</ul>
+		<div class="container">
+			<div class="card">
+				<ul class="table-view">
+					<li class="table-view-cell">
+						<strong>Seleccionar ciudad</strong>
+					</li>
+					<li class="table-view-cell">
+						<a class="push-right" href="promos.html" data-transition="slide-in">Oviedo</a>
+					</li>
+					<li class="table-view-cell">
+						<a class="push-right" href="promos.html" data-transition="slide-in">Sevilla</a>
+					</li>
+					<li class="table-view-cell">
+						<a class="push-right" href="promos.html">Barcelona</a>
+					</li>
+					<li class="table-view-cell">
+						<a class="push-right" href="promos.html">Madrid</a>
+					</li>
+					<li class="table-view-cell">
+						<a class="push-right" href="promos.html">Ciudad real</a>
+					</li>
+					<li class="table-view-cell">
+						<a class="push-right" href="promos.html">Valencia</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="categories-wrapper"></div>
+
 		</div>
 	</div>
 
@@ -99,6 +137,43 @@
 				<input type="email" placeholder="Email">
 				<input type="text" placeholder="Username">
 			</form>
+
+			<h5 class="content-padded">App settings</h5>
+
+			<ul class="table-view">
+				<li class="table-view-cell media">
+					<span class="media-object pull-left icon icon-sound"></span>
+					<div class="media-body">
+						Enable sounds
+					</div>
+					<div class="toggle">
+						<div class="toggle-handle"></div>
+					</div>
+				</li>
+				<li class="table-view-cell media">
+					<span class="media-object pull-left icon icon-person"></span>
+					<div class="media-body">
+						Parental controls
+					</div>
+					<div class="toggle">
+						<div class="toggle-handle"></div>
+					</div>
+				</li>
+			</ul>
+			<div class="content-padded">
+				<button class="btn btn-positive btn-block">Save settings</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Settings Modal -->
+	<div id="settingsModalBis" class="modal">
+		<header class="bar bar-nav">
+			<a class="icon icon-close pull-right" href="#settingsModalBis"></a>
+			<h1 class="title">Settings Example</h1>
+		</header>
+
+		<div class="content">
 
 			<h5 class="content-padded">App settings</h5>
 
