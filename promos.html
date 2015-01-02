@@ -37,25 +37,6 @@
 	<script src="js/datamanager.js"></script>
 	<script src="js/view.js"></script>
 	<script src="js/viewtest.js"></script>
-
-	<script type="text/javascript">
-	var catController = new SectionController();
-
-	catController.init('categories');
-	</script>
-
-	<script id="categoriesTemplate" type="text/x-handlebars-template">
-	<h3>Lista de categorías:</h3>
-
-	<ul id="category-list">
-	{{#each categories}}
-	<li>
-	<h4>{{name}}</h4>
-	<h5>{{slug}}</h5>
-	</li>
-	{{/each}}
-	</ul>
-	</script>
 </head>
 <body>
 
@@ -91,7 +72,7 @@
 				<ul class="table-view">
 					<li class="table-view-cell">
 						<a class="push-right" data-transition="slide-in" href="index.html">
-							<strong>Página de entrada <i class="myicon-down-open-big"></i></strong>
+							<strong>Página de entrada con transición <i class="myicon-down-open-big"></i></strong>
 						</a>
 					</li>
 				</ul>
@@ -100,21 +81,19 @@
 			<div class="row">
 				<div class="col-xs-6 col-sm-4">
 					<ol class="list-group">
-						<li class="list-group-item"><a data-transition="slide-in" href="index.html">
-							<strong>Página de entrada <i class="myicon-down-open-big"></i></strong>
+						<li class="list-group-item"><a data-transition="slide-in" href="detail.html">
+							<strong>Página de detalle con transición <i class="myicon-down-open-big"></i></strong>
 						</a></li>
-						<li class="list-group-item"><a href="index.html">Library <i class="myicon-down-open-big"></i></a></li>
-						<li class="list-group-item">Data <i class="myicon-down-open-big"></i></li>
+						<li class="list-group-item"><a href="detail.html">Detalle sin transición <i class="myicon-down-open-big"></i></a></li>
 					</ol>
 				</div>
 
 				<div class="col-xs-6 col-sm-4">
 					<ol id="test-list" class="list-group">
-						<li class="list-group-item"><a data-transition="slide-in" href="index.html">
-							<strong>Página de entrada <i class="myicon-down-open-big"></i></strong>
+						<li class="list-group-item"><a data-transition="slide-in" href="detail.html">
+							<strong>Página de detalle con transición <i class="myicon-down-open-big"></i></strong>
 						</a></li>
-						<li class="list-group-item"><a href="index.html">Library <i class="myicon-down-open-big"></i></a></li>
-						<li class="list-group-item">Data <i class="myicon-down-open-big"></i></li>
+						<li class="list-group-item"><a href="detail.html">Detalle sin transición <i class="myicon-down-open-big"></i></a></li>
 					</ol>
 				</div>
 
@@ -124,6 +103,101 @@
 			</div>
 
 		</div>
+	</div>
+
+	<!-- Settings Modal -->
+	<div id="settingsModal" class="modal">
+		<header class="bar bar-nav">
+			<a class="icon icon-close pull-right" href="#settingsModal"></a>
+			<h1 class="title">Settings Example</h1>
+		</header>
+
+		<div class="content">
+			<form class="input-group">
+				<input type="text" placeholder="Full name">
+				<input type="email" placeholder="Email">
+				<input type="text" placeholder="Username">
+			</form>
+
+			<h5 class="content-padded">App settings</h5>
+
+			<ul class="table-view">
+				<li class="table-view-cell media">
+					<span class="media-object pull-left icon icon-sound"></span>
+					<div class="media-body">
+						Enable sounds
+					</div>
+					<div class="toggle">
+						<div class="toggle-handle"></div>
+					</div>
+				</li>
+				<li class="table-view-cell media">
+					<span class="media-object pull-left icon icon-person"></span>
+					<div class="media-body">
+						Parental controls
+					</div>
+					<div class="toggle">
+						<div class="toggle-handle"></div>
+					</div>
+				</li>
+			</ul>
+			<div class="content-padded">
+				<button class="btn btn-positive btn-block">Save settings</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Settings Modal -->
+	<div id="settingsModalBis" class="modal">
+		<header class="bar bar-nav">
+			<a class="icon icon-close pull-right" href="#settingsModalBis"></a>
+			<h1 class="title">Settings Example</h1>
+		</header>
+
+		<div class="content">
+
+			<h5 class="content-padded">App settings</h5>
+
+			<ul class="table-view">
+				<li class="table-view-cell media">
+					<span class="media-object pull-left icon icon-sound"></span>
+					<div class="media-body">
+						Enable sounds
+					</div>
+					<div class="toggle">
+						<div class="toggle-handle"></div>
+					</div>
+				</li>
+				<li class="table-view-cell media">
+					<span class="media-object pull-left icon icon-person"></span>
+					<div class="media-body">
+						Parental controls
+					</div>
+					<div class="toggle">
+						<div class="toggle-handle"></div>
+					</div>
+				</li>
+			</ul>
+			<div class="content-padded">
+				<button class="btn btn-positive btn-block">Save settings</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="popover" class="popover">
+		<header class="bar bar-nav">
+			<h1 class="title">Popover title</h1>
+		</header>
+		<ul class="table-view">
+			<li class="table-view-cell">Item1</li>
+			<li class="table-view-cell">Item2</li>
+			<li class="table-view-cell">Item3</li>
+			<li class="table-view-cell">Item4</li>
+			<li class="table-view-cell">Item5</li>
+			<li class="table-view-cell">Item6</li>
+			<li class="table-view-cell">Item7</li>
+			<li class="table-view-cell">Item8</li>
+		</ul>
 	</div>
 
 </body>

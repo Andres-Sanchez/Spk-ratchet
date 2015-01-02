@@ -37,7 +37,7 @@ header.bar.bar-nav
 	background-color: #D2D829;
 }
 
-.bar a
+/*.bar a
 {
 	display: block;
 }
@@ -45,7 +45,7 @@ header.bar.bar-nav
 .title
 {
 	position: inherit;
-}
+}*/
 
 #top-bar
 {
@@ -54,7 +54,7 @@ header.bar.bar-nav
 
 #main-search-form input
 {
-	width: 95%;
+	width: 90%;
 
 	padding-left: 70px;
 	border: 0 none;
