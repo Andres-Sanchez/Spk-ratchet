@@ -19,6 +19,16 @@ body
 	background-color: #D2D829;
 }
 
+.bar a
+{
+	display: block;
+}
+
+.title
+{
+	position: inherit;
+}
+
 #top-bar
 {
 	position: relative;
@@ -26,6 +36,8 @@ body
 
 #main-search-form input
 {
+	width: 95%;
+
 	padding-left: 70px;
 	border: 0 none;
 	margin-top: 20px;
