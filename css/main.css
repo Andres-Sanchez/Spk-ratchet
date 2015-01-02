@@ -11,6 +11,24 @@ body
 	height: 100% !important;
 	position: static !important;
 }
+/********************/
+
+/* CSS fix for modal visibility bar issue on iOS8 */
+header.bar.bar-nav
+{
+	-webkit-transform: translateZ(0);
+}
+
+.bar.bar-header-secondary
+{
+	-webkit-transform: translateZ(0);
+}
+
+.bar.bar-footer
+{
+	-webkit-transform: translateZ(0);
+}
+/********************/
 
 .bar
 {
