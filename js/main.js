@@ -7,16 +7,20 @@ initSection();
 // Execute every push event (Change page)
 window.addEventListener('push', function()
 {
-	console.info('Push event');
+	// console.info('Push event');
 
 	initSection();
 });
 
 // Execute on Android back button
-window.onpopstate = function(ev)
+window.addEventListener('popstate', function(event)
 {
-	initSection();
-}
+    if (event.state)
+    {
+        initSection();
+    }
+}, false);
+
 
 function initSection()
 {
@@ -26,10 +30,5 @@ function initSection()
 		{
 			catController.init($('#section').data("section"));
 		}
-
-		$("a").on("click", function(ev)
-		{
-			ev.preventDefault();
-		})
 	});
 }

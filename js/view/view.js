@@ -27,5 +27,17 @@ View.prototype.renderTemplate = function( data, sectionName )
 
 View.prototype.doActions = function()
 {
-	console.info('Acciones de la clase padre');
+	this.disableClick();
+	this.initUserInteractions();
+};
+
+View.prototype.initUserInteractions = function()
+{};
+
+View.prototype.disableClick = function()
+{
+	$("a").on("click", function(ev)
+	{
+		ev.preventDefault();
+	})
 };

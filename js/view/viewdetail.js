@@ -5,7 +5,7 @@ ViewDetail.prototype.constructor = ViewDetail;
 ViewDetail.prototype.parent = View.prototype;
 
 
-ViewDetail.prototype.doActions = function()
+ViewDetail.prototype.initUserInteractions = function()
 {
-	console.info('Acciones Detalle');
+	// console.info('Acciones Detalle');
 };
