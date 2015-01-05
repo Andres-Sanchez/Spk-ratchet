@@ -10,6 +10,8 @@ View.DETAIL = "detail";
 View.prototype.renderPage = function()
 {
 	jQuery("#template-wrapper").append(this.html);
+
+	jQuery(document).trigger( "viewFinishEvent" );
 };
 
 View.prototype.renderTemplate = function( data, sectionName )
@@ -17,21 +19,8 @@ View.prototype.renderTemplate = function( data, sectionName )
     // console.log('data: '+data[0].name);
 
     // console.info('Holas');
-
-    switch( sectionName )
-    {
-    	case View.HOME:
-    		var source   = jQuery('#homeTemplate').html();
-    	break;
-
-    	case View.PROMOS:
-    		var source   = jQuery('#promosTemplate').html();
-    	break;
-
-    	case View.DETAIL:
-    		var source   = jQuery('#detailTemplate').html();
-    	break;
-    }
+    
+    var source   = jQuery('#handlebarsTemplate').html();
 
     var template = Handlebars.compile(source);
 
@@ -40,4 +29,9 @@ View.prototype.renderTemplate = function( data, sectionName )
     // console.info('html: '+this.html);
 
     this.renderPage();
+};
+
+View.prototype.doActions = function()
+{
+	console.info('Acciones de la clase padre');
 };

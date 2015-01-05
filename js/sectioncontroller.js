@@ -1,6 +1,14 @@
 function SectionController ()
 {
+	var ref = this;
+
 	this.view = null;
+
+	// Init actions when view finish event triggers
+	$(document).on('viewFinishEvent', function()
+	{
+		ref.view.doActions();
+	});
 }
 
 SectionController.prototype.init = function( sectionName ) 
@@ -10,8 +18,8 @@ SectionController.prototype.init = function( sectionName )
 	switch( sectionName )
 	{
 		case View.HOME:
-			// View object
-			// this.view = new ViewHome();
+			// Specific View object
+			this.view = new ViewHome();
 
 			// AJAX Request
 			jQuery.ajax({
@@ -22,11 +30,12 @@ SectionController.prototype.init = function( sectionName )
 				success: function(data) { ref.onDataSuccess ( data, sectionName ); },
 				error: function(jqXHR, textStatus, errorThrown) { ref.onDataError(jqXHR, textStatus, errorThrown); }
 			});
+
 		break;
 
 		case View.PROMOS:
-			// View object
-			// this.view = new ViewPromos();
+			// Specific View object
+			this.view = new ViewPromos();
 
 			// AJAX Request
 			jQuery.ajax({
@@ -37,11 +46,12 @@ SectionController.prototype.init = function( sectionName )
 				success: function(data) { ref.onDataSuccess ( data, sectionName ); },
 				error: function(jqXHR, textStatus, errorThrown) { ref.onDataError(jqXHR, textStatus, errorThrown); }
 			});
+
 		break;
 
         case View.DETAIL:
-        	// View object
-        	// this.view = new ViewDetail();
+        	// Specific View object
+        	this.view = new ViewDetail();
 
         	// AJAX Request
             jQuery.ajax({
@@ -52,18 +62,18 @@ SectionController.prototype.init = function( sectionName )
                 success: function(data) { ref.onDataSuccess ( data, sectionName ); },
                 error: function(jqXHR, textStatus, errorThrown) { ref.onDataError(jqXHR, textStatus, errorThrown); }
             });
-            break;
+
+		break;
 	}
 };
 
 SectionController.prototype.onDataSuccess = function( data, sectionName )
 {
-	this.view = new View();
     this.view.renderTemplate( data, sectionName );
 };
 
 SectionController.prototype.onDataError = function( jqXHR, textStatus, errorThrown ) 
 {
 	// TODO: Control de errores
-	// console.info('Error encontrado (onTableError): '+textStatus);
+	// console.info('Error encontrado: '+textStatus);
 };

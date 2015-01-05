@@ -15,7 +15,7 @@
 	<link href="css/ratchet.css" rel="stylesheet">
 
 	<!-- Include the compiled Ratchet JS -->
-	<script src="js/ratchet.js"></script>
+	<script src="js/ratchet/ratchet.js"></script>
 
 	
 	<!-- Añadidos -->
@@ -34,7 +34,11 @@
 	<script src="lib/jquery/jquery.min.js"></script>
 	<script src="lib/handlebars/handlebars.js"></script>
 	<script src="js/sectioncontroller.js"></script>
-	<script src="js/view.js"></script>
+	<script src="js/view/view.js"></script>
+	<script src="js/view/viewhome.js"></script>
+	<script src="js/view/viewpromos.js"></script>
+	<script src="js/view/viewdetail.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
 
@@ -64,8 +68,9 @@
 	</header>
 
 	<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-	<div id="promos-section" class="content">
-		<div class="container">
+	<div class="content">
+
+		<div id="promos-section" class="container">
 			<div class="card">
 				<ul class="table-view">
 					<li class="table-view-cell">
@@ -99,8 +104,22 @@
 					<div id="template-wrapper"></div>
 				</div>
 			</div>
-
 		</div>
+
+		<!-- Promo template -->
+		<script id="handlebarsTemplate" type="text/x-handlebars-template">
+			<h3>Sección promociones</h3>
+
+		    <ul id="category-list">
+		        {{#each categories}}
+				    <li>
+				    	<h4>{{name}}</h4>
+				    	<h5>{{slug}}</h5>
+				    </li>
+				{{/each}}
+		    </ul>
+		</script>
+
 	</div>
 
 	<!-- Settings Modal -->
@@ -197,51 +216,6 @@
 			<li class="table-view-cell">Item8</li>
 		</ul>
 	</div>
-
-	<!-- Handlebars templates -->
-	<!-- ******************** -->
-
-	<!-- Main template -->
-	<script id="homeTemplate" type="text/x-handlebars-template">
-		<h3>Sección home</h3>
-
-	    <ul id="category-list">
-	        {{#each categories}}
-			    <li>
-			    	<h4>{{name}}</h4>
-			    	<h5>{{slug}}</h5>
-			    </li>
-			{{/each}}
-	    </ul>
-	</script>
-
-	<!-- Promo template -->
-	<script id="promosTemplate" type="text/x-handlebars-template">
-		<h3>Sección promociones</h3>
-
-	    <ul id="category-list">
-	        {{#each categories}}
-			    <li>
-			    	<h4>{{name}}</h4>
-			    	<h5>{{slug}}</h5>
-			    </li>
-			{{/each}}
-	    </ul>
-	</script>
-
-	<!-- Detail template -->
-	<script id="detailTemplate" type="text/x-handlebars-template">
-		<h3>Sección detalle:</h3>
-
-	    <ul id="category-list">
-	        {{#each categories}}
-			    <li>
-			    	<h4>{{name}}</h4>
-			    	<h5>{{slug}}</h5>
-			    </li>
-			{{/each}}
-	    </ul>
-	</script>
 
 </body>
 </html>

@@ -1,10 +1,10 @@
+var catController = new SectionController();
+
 $(document).ready( function()
 {
 	if($('#home-section').length)
 	{
 		// console.info('Sección home no push event');
-
-		var catController = new SectionController();
 		catController.init('home');
 	}
 });
@@ -19,22 +19,44 @@ window.addEventListener('push', function()
 		{
 			// console.info('Sección home');
 
-			var catController = new SectionController();
 			catController.init('home');
 		}
 		if($('#promos-section').length)
 		{
 			// console.info('Sección promociones');
 
-			var catController = new SectionController();
 			catController.init('promos');
 		}
 		if($('#detail-section').length)
 		{
 			// console.info('Sección detalle');
 
-			var catController = new SectionController();
 			catController.init('detail');
 		}
 	});
 });
+
+window.onpopstate = function(ev)
+{
+	$(document).ready( function()
+	{
+		if($('#home-section').length)
+		{
+			// console.info('Sección home');
+
+			catController.init('home');
+		}
+		if($('#promos-section').length)
+		{
+			// console.info('Sección promociones');
+
+			catController.init('promos');
+		}
+		if($('#detail-section').length)
+		{
+			// console.info('Sección detalle');
+
+			catController.init('detail');
+		}
+	});
+}
