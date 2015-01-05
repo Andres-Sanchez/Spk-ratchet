@@ -1,0 +1,49 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Promos",
+            "slug": "promos"
+        },
+        {
+            "id": 2,
+            "name": "Transporte Aéreo",
+            "slug": "transporte-aereo"
+        },
+        {
+            "id": 3,
+            "name": "Marketing Directo",
+            "slug": "marketing"
+        },
+        {
+            "id": 4,
+            "name": "Transporte Terrestre Viajeros",
+            "slug": "transporte-terrestre"
+        },
+        {
+            "id": 5,
+            "name": "Espectáculos Artísticos, Deportivos y Recreativos",
+            "slug": "espectaculos"
+        },
+        {
+            "id": 6,
+            "name": "Prendas de vestir",
+            "slug": "prendas-vestir"
+        },
+        {
+            "id": 7,
+            "name": "Alimentación",
+            "slug": "alimentacion"
+        },
+        {
+            "id": 9,
+            "name": "Electrodomésticos",
+            "slug": "electrodomesticos"
+        },
+        {
+            "id": 10,
+            "name": "Otras",
+            "slug": "otras"
+        }
+    ]
+}

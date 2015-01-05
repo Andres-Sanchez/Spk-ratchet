@@ -2,8 +2,8 @@
     "categories": [
         {
             "id": 1,
-            "name": "Agencias de viaje y operadores turísticos",
-            "slug": "agencias-viaje"
+            "name": "Home",
+            "slug": "home"
         },
         {
             "id": 2,
