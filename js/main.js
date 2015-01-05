@@ -1,62 +1,35 @@
 var catController = new SectionController();
 
-$(document).ready( function()
-{
-	if($('#home-section').length)
-	{
-		// console.info('Sección home no push event');
-		catController.init('home');
-	}
-});
+// It will execute the first time in the home page
+initSection();
 
+
+// Execute every push event (Change page)
 window.addEventListener('push', function()
 {
-	// console.info("Evento push");
+	console.info('Push event');
 
-	$(document).ready( function()
-	{
-		if($('#home-section').length)
-		{
-			// console.info('Sección home');
-
-			catController.init('home');
-		}
-		if($('#promos-section').length)
-		{
-			// console.info('Sección promociones');
-
-			catController.init('promos');
-		}
-		if($('#detail-section').length)
-		{
-			// console.info('Sección detalle');
-
-			catController.init('detail');
-		}
-	});
+	initSection();
 });
 
+// Execute on Android back button
 window.onpopstate = function(ev)
+{
+	initSection();
+}
+
+function initSection()
 {
 	$(document).ready( function()
 	{
-		if($('#home-section').length)
+		if($('#section').length)
 		{
-			// console.info('Sección home');
-
-			catController.init('home');
+			catController.init($('#section').data("section"));
 		}
-		if($('#promos-section').length)
+
+		$("a").on("click", function(ev)
 		{
-			// console.info('Sección promociones');
-
-			catController.init('promos');
-		}
-		if($('#detail-section').length)
-		{
-			// console.info('Sección detalle');
-
-			catController.init('detail');
-		}
+			ev.preventDefault();
+		})
 	});
 }

@@ -16,17 +16,11 @@ View.prototype.renderPage = function()
 
 View.prototype.renderTemplate = function( data, sectionName )
 {
-    // console.log('data: '+data[0].name);
-
-    // console.info('Holas');
-    
     var source   = jQuery('#handlebarsTemplate').html();
 
     var template = Handlebars.compile(source);
 
     this.html    = template(data);
-
-    // console.info('html: '+this.html);
 
     this.renderPage();
 };
