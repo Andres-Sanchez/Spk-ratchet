@@ -34,7 +34,7 @@ ViewDetail.prototype.initMap = function()
     map: map
     });
 
-    var contentString = '<div id="content"><h5>Workshop</h5><p>Lorem ipsum dolor sit amet.</p></div>';
+    var contentString = '<div id="content"><h5>Promo</h5><p>Lorem ipsum dolor sit amet.</p></div>';
 
     var infoWindow = new google.maps.InfoWindow({
         content: contentString
