@@ -35,7 +35,7 @@ View.prototype.initSectionActions = function(){};
 
 View.prototype.disableClick = function()
 {
-	$("a").on("click", function(ev)
+	$(".no-click").on("click", function(ev)
 	{
 		ev.preventDefault();
 	})
