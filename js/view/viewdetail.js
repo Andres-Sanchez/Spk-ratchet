@@ -5,10 +5,8 @@ ViewDetail.prototype.constructor = ViewDetail;
 ViewDetail.prototype.parent = View.prototype;
 
 
-ViewDetail.prototype.initUserInteractions = function()
+View.prototype.initSectionActions = function()
 {
-	// console.info('Acciones Detalle');
-
 	this.initMap();
 };
 
@@ -34,13 +32,14 @@ ViewDetail.prototype.initMap = function()
     map: map
     });
 
-    var contentString = '<div id="content"><h5>Promo</h5><p>Lorem ipsum dolor sit amet.</p></div>';
+    var contentString = '<div id="info-content"><h5>Promo</h5><p>Lorem ipsum dolor sit amet.</p></div>';
 
     var infoWindow = new google.maps.InfoWindow({
         content: contentString
     });
 
-    google.maps.event.addListener(marker, 'click', function() {
+    google.maps.event.addListener(marker, 'click', function()
+    {
         infoWindow.open(map,marker);
     });
 }

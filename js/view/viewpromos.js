@@ -5,7 +5,7 @@ ViewPromos.prototype.constructor = ViewPromos;
 ViewPromos.prototype.parent = View.prototype;
 
 
-ViewPromos.prototype.initUserInteractions = function()
+ViewPromos.prototype.initSectionActions = function()
 {
 	// console.info('Acciones Promociones');
 };

@@ -12,10 +12,10 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 	<!-- Include the compiled Ratchet CSS -->
-	<link href="css/ratchet.css" rel="stylesheet">
+	<link href="lib/ratchet/css/ratchet.css" rel="stylesheet">
 
 	<!-- Include the compiled Ratchet JS -->
-	<script src="js/ratchet/ratchet.js"></script>
+	<script src="lib/ratchet/js/ratchet.js"></script>
 
 	
 	<!-- Añadidos -->
@@ -25,14 +25,16 @@
 	<!-- [if IE 7]><link rel="stylesheet" href="css/icon_font/icon_font-ie7.css"><![endif] -->
 
 	<!-- Bootstrap -->
-	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Custom CSS -->
 	<link href="css/main.css" rel="stylesheet">
 
-	<!-- Include custom JS -->
+	<!-- JS -->
 	<script src="lib/jquery/jquery.min.js"></script>
 	<script src="lib/handlebars/handlebars.js"></script>
+
+	<!-- Custom JS -->
 	<script src="js/sectioncontroller.js"></script>
 	<script src="js/view/view.js"></script>
 	<script src="js/view/viewhome.js"></script>
@@ -53,14 +55,20 @@
 				<span class="icon icon-caret"></span>
 			</h1>
 		</a> -->
+		<a class="icon icon-left-nav pull-left" href="promos.html" data-transition="slide-out"></a>
+
+		<h1 class="title">
+				Sección de detalle
+			</h1>
+
 		<section id="top-bar">
-			<form id="main-search-form" name="main-search-form" action="#" role="form">
+			<!-- <form id="main-search-form" name="main-search-form" action="#" role="form">
 				<div class="form-group">
 	                <label class="sr-only" for="main-search">Buscar promociones</label>
 	    			<input type="text" class="form-control" id="main-search" placeholder="Buscar promociones...">
 	    			<button type="submit"><i class="myicon-search"></i></button>
 	            </div>
-			</form>
+			</form> -->
 
 			<div id="main-options">
 				<a href="#settingsModal"><i class="myicon-ellipsis-vert"></i></a>
@@ -99,9 +107,9 @@
 			</div>
 
 			<div id="template-wrapper"></div>
-
-			<div id="map-canvas"></div>
 		</div>
+
+		<div id="map-canvas"></div>
 
 		<!-- Detail template -->
 		<script id="handlebarsTemplate" type="text/x-handlebars-template">

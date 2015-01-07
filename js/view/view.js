@@ -9,7 +9,7 @@ View.DETAIL = "detail";
 
 View.prototype.renderPage = function()
 {
-	jQuery("#template-wrapper").append(this.html);
+	jQuery("#template-wrapper").empty().append(this.html);
 
 	jQuery(document).trigger( "viewFinishEvent" );
 };
@@ -28,11 +28,10 @@ View.prototype.renderTemplate = function( data, sectionName )
 View.prototype.doActions = function()
 {
 	this.disableClick();
-	this.initUserInteractions();
+	this.initSectionActions();
 };
 
-View.prototype.initUserInteractions = function()
-{};
+View.prototype.initSectionActions = function(){};
 
 View.prototype.disableClick = function()
 {

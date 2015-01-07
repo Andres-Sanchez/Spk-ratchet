@@ -5,7 +5,7 @@ ViewHome.prototype.constructor = ViewHome;
 ViewHome.prototype.parent = View.prototype;
 
 
-ViewHome.prototype.initUserInteractions = function()
+ViewHome.prototype.initSectionActions = function()
 {
 	// console.info('Acciones Home');
 };
