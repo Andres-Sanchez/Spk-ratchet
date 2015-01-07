@@ -1,0 +1,19 @@
+{
+    "RESULT": "OK",
+    "CODE": "DATA_OK",
+    "companies": [
+        {
+            "id": 1,
+            "name": "El Chigre de la Caleya",
+            "logo": "company_logo.jpg",
+            "timetable": "L-V de 9:00 - 14:00 y de 16:00 - 20:00",
+            "address": "González Besada, 53, Oviedo",
+            "phone": "999 9999 999",
+            "phone_mobile": "111 111 111",
+            "email": "lorem@ipsum.com",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, optio! Animi odio cupiditate itaque aliquam aspernatur, eum, corrupti repellat adipisci blanditiis mollitia laborum quaerat, fuga.",
+            "start_date": "2014-10-20 00:00:00",
+            "end_date": "2014-10-26 00:00:00"
+        }
+    ]
+}

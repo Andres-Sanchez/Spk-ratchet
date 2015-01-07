@@ -13,7 +13,7 @@
 
 	<!-- Include the compiled Ratchet CSS -->
 	<link href="lib/ratchet/css/ratchet.css" rel="stylesheet">
-	<link href="lib/ratchet/css/ratchet-theme-ios.min.css" rel="stylesheet">
+	<!-- <link href="lib/ratchet/css/ratchet-theme-ios.min.css" rel="stylesheet"> -->
 
 	<!-- Include the compiled Ratchet JS -->
 	<script src="lib/ratchet/js/ratchet.js"></script>
@@ -34,6 +34,8 @@
 	<!-- JS -->
 	<script src="lib/jquery/jquery.min.js"></script>
 	<script src="lib/handlebars/handlebars.js"></script>
+	<script src="lib/imagesloaded/imagesloaded.min.js"></script>
+	<script src="lib/masonry/masonry.min.js"></script>
 
 	<!-- Custom JS -->
 	<script src="js/sectioncontroller.js"></script>
@@ -48,7 +50,7 @@
 <body>
 
 	<!-- Make sure all your bars are the first things in your <body> -->
-	<header class="bar bar-nav">
+	<!-- <header class="bar bar-nav"> -->
 
 		<!-- <a href="#popover">
 			<h1 class="title">
@@ -56,7 +58,7 @@
 				<span class="icon icon-caret"></span>
 			</h1>
 		</a> -->
-		<section id="top-bar">
+		<!-- <section id="top-bar">
 			<form id="main-search-form" name="main-search-form" action="#" role="form">
 				<div class="form-group">
 	                <label class="sr-only" for="main-search">Buscar promociones</label>
@@ -70,6 +72,11 @@
 			</div>
 		</section>
 		
+	</header> -->
+
+	<header class="bar bar-nav">
+		<a class="icon icon-left-nav pull-left" href="index.html" data-transition="slide-out"></a>
+		<h1 class="title">Index</h1>
 	</header>
 
 	<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->

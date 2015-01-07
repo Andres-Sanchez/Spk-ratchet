@@ -1,0 +1,104 @@
+{
+    "RESULT": "OK",
+    "CODE": "DATA_OK",
+    "categories": [
+        {
+            "id": 1,
+            "name": "Formación",
+            "slug": "formación",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 2,
+            "name": "Servicios",
+            "slug": "servicios",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 3,
+            "name": "Automoción",
+            "slug": "automoción",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 4,
+            "name": "Moda",
+            "slug": "moda",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 5,
+            "name": "Eventos y Ocio",
+            "slug": "eventos-ocio",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 6,
+            "name": "Salud y Belleza",
+            "slug": "salud-belleza",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 7,
+            "name": "Comer y Beber",
+            "slug": "comer-beber",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 8,
+            "name": "Tecnología",
+            "slug": "tecnología",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 9,
+            "name": "Viajar y Dormir",
+            "slug": "viajar-dormir",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 10,
+            "name": "Decoración y Hogar",
+            "slug": "decoración-hogar",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 11,
+            "name": "Deportes",
+            "slug": "deportes",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 12,
+            "name": "Bares y Copas",
+            "slug": "bares-copas",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 13,
+            "name": "Mascotas",
+            "slug": "mascotas",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        },
+        {
+            "id": 14,
+            "name": "Resto",
+            "slug": "resto",
+            "logo": "logo.png",
+            "map_icon": "ico_map.png"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "RESULT": "OK",
+    "CODE": "DATA_OK",
+    "is_login": true,
+    "user": {
+        "id": 1,
+        "email": "jorcanvi@gmail.com",
+        "status": 1,
+        "last_login": "2014-12-17 10:46:26",
+        "first_name": "Jorge",
+        "last_name": "Canteli Vigón",
+        "fullName": "Jorge Canteli Vigón",
+        "favorites": [
+            {
+                "id": 1,
+                "company_id": 1,
+                "name": "El Chigre de la Caleya"
+            },
+            {
+                "id": 2,
+                "company_id": 1,
+                "name": "El Calderu"
+            }
+        ],
+        "promos": [
+            {
+                "id": 1,
+                "company_id": 1,
+                "name": "Menú cachopo El Chigre de la Caleya para 2 en Oviedo"
+            },
+            {
+                "id": 2,
+                "company_id": 2,
+                "name": "Menú Chuletón de Buey 'El Calderu' 2p."
+            }
+        ],
+        "comments": [
+            {
+                "id": 1,
+                "promo_id": 1,
+                "comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, aliquid."
+            },
+            {
+                "id": 2,
+                "promo_id": 2,
+                "comment": "Lorem ipsum dolor sit amet."
+            }
+        ]
+    }
+}

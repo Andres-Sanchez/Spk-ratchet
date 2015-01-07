@@ -40,7 +40,7 @@ SectionController.prototype.init = function( sectionName )
 			// AJAX Request
 			jQuery.ajax({
 				dataType: 'json',
-                url: "json/promos.json",
+                url: "json/promo.json",
 				cache: false,
 				type: 'GET',
 				success: function(data) { ref.onDataSuccess ( data, sectionName ); },
