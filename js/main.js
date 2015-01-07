@@ -1,4 +1,4 @@
-var catController = new SectionController();
+var spkController = new SectionController();
 
 // It will execute the first time in the home page
 initSection();
@@ -28,7 +28,7 @@ function initSection()
 	{
 		if($('#section').length)
 		{
-			catController.init($('#section').data("section"));
+			spkController.init($('#section').data("section"));
 		}
 	});
 }
