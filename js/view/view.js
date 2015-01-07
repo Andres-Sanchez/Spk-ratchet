@@ -27,16 +27,18 @@ View.prototype.renderTemplate = function( data, sectionName )
 
 View.prototype.doActions = function()
 {
-	this.disableClick();
+	this.performClick();
 	this.initSectionActions();
 };
 
 View.prototype.initSectionActions = function(){};
 
-View.prototype.disableClick = function()
+View.prototype.performClick = function()
 {
 	$(".no-click").on("click", function(ev)
 	{
 		ev.preventDefault();
 	})
+
+	FastClick.attach(document.body);
 };

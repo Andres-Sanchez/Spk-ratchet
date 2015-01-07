@@ -31,8 +31,9 @@ a:active,
 a:hover {
   text-decoration: none;
 }
-.title {
-  color: #fff;
+header a {
+  padding: 0 5px;
+  background-color: red;
 }
 #preloader {
   position: absolute;
@@ -46,6 +47,9 @@ a:hover {
 /************/
 /*  Header  */
 /************/
+.title {
+  color: #fff;
+}
 #top-bar {
   position: relative;
 }
