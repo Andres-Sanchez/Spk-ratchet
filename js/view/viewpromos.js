@@ -9,7 +9,7 @@ ViewPromos.prototype.initSectionActions = function()
 {
 	// console.info('Acciones Promociones');
 
-	// this.initMasonry();
+	this.initMasonry();
 };
 
 ViewPromos.prototype.initMasonry = function()
@@ -26,11 +26,9 @@ ViewPromos.prototype.initMasonry = function()
 
 	$container.imagesLoaded( function() {
 
-	// Masonry initialization
-	$container.masonry();
+		// Masonry initialization
+		$container.masonry();
 
-	$container.css({ "visibility": "visible" });
-
-	$('#preloader').css({ "visibility": "hidden" });
+		$container.css({ "visibility": "visible" });
 	});
 };
