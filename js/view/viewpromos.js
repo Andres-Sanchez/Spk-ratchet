@@ -9,7 +9,7 @@ ViewPromos.prototype.initSectionActions = function()
 {
 	// console.info('Acciones Promociones');
 
-	this.initMasonry();
+	// this.initMasonry();
 };
 
 ViewPromos.prototype.initMasonry = function()
