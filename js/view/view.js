@@ -40,5 +40,5 @@ View.prototype.performClick = function()
 		ev.preventDefault();
 	})
 
-	// FastClick.attach(document.body);
+	FastClick.attach(document.body);
 };
