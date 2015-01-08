@@ -29,6 +29,8 @@ View.prototype.doActions = function()
 {
 	this.performClick();
 	this.openExternalLinks();
+
+	// Specific for the section, redefined in the section's view
 	this.initSectionActions();
 };
 
