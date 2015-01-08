@@ -26,4 +26,9 @@
     <icon src="icon.png" />
     <gap:splash src="splash.png" />
 
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="Fullscreen" value="true" />
+
+    <gap:plugin name="org.li8.inappbrowser" version="0.1" />
+
 </widget>
