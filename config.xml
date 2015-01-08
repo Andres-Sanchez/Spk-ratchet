@@ -29,6 +29,8 @@
     <preference name="DisallowOverscroll" value="true"/>
     <preference name="Fullscreen" value="true" />
 
-    <gap:plugin name="org.li8.inappbrowser" version="0.1" />
+    <access origin="*" browserOnly="true"/>
+    <gap:plugin name="org.apache.cordova.inappbrowser"/>
+    <gap:plugin name="org.apache.cordova.geolocation"/>
 
 </widget>
