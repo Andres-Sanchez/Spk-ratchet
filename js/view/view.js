@@ -28,6 +28,7 @@ View.prototype.renderTemplate = function( data, sectionName )
 View.prototype.doActions = function()
 {
 	this.performClick();
+	this.openExternalLinks();
 	this.initSectionActions();
 };
 
@@ -38,7 +39,17 @@ View.prototype.performClick = function()
 	$(".no-click").on("click", function(ev)
 	{
 		ev.preventDefault();
-	})
+	});
 
 	FastClick.attach(document.body);
+};
+
+View.prototype.openExternalLinks = function()
+{
+	$(".exteral-link").on("click", function(ev)
+	{
+		ev.preventDefault();
+
+		window.open( $(this).data("url") , '_system');
+	});
 };
