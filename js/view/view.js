@@ -46,7 +46,7 @@ View.prototype.performClick = function()
 
 View.prototype.openExternalLinks = function()
 {
-	$(".exteral-link").on("click", function(ev)
+	$(".external-link").on("click", function(ev)
 	{
 		ev.preventDefault();
 
